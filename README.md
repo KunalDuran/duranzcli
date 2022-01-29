@@ -34,4 +34,25 @@ Common Stats Examples.
     
 
 > Check this out also : duranzapi (web application). 
-> To be published soon and will be available on https://www.kunalduran.com# duranzcli
+> To be published soon and will be available on https://www.kunalduran.com
+
+# process to run the application
+
+##### # pre-requisites
+- Go 
+- mysql
+
+> step1 : clone repository 
+> step2 : download cricsheet data anywhere
+> step3 : provide path to data in the module/process/cricket.go line:15
+> step4 : run go build or go run main.go with appropriate arguments
+
+### Available commands example:
+
+- To create all the tables run *go run main.go initial*
+- To empty the complete database *go run main.go delete*
+- Run format wise commands *go run main.go all odi* 
+- *go run main.go all ipl*
+- Run process for a particular matchfile *go run main.go all test 42242.json*
+
+    
