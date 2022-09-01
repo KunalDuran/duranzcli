@@ -54,6 +54,8 @@ func main() {
 	}
 	// load cache layer
 	data.PseudoCacheLayer(strings.ToLower(format))
+
+	fmt.Println("Taking database from : ", process.DATASET_BASE)
 	process.DATASET_BASE += (folderPath + process.SLASH)
 
 	process.Activate(processName, fileName)

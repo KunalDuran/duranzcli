@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"math"
+	"os"
 	"strconv"
 	"strings"
 	"time"
@@ -12,7 +13,12 @@ import (
 	"github.com/KunalDuran/duranzcli/module/data"
 )
 
-var DATASET_BASE = `/home/kunalduran/Desktop/duranz_api/develop/datasets/`
+// var DATASET_BASE = `/home/kunalduran/Desktop/duranz_api/develop/datasets/`
+//var PWD string
+var PWD, _ = os.Getwd()
+
+var DATASET_BASE = PWD + `/datasets/`
+
 var SLASH = `/`
 
 func Activate(processName, fileName string) {
